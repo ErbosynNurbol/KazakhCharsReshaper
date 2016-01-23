@@ -1,10 +1,11 @@
 /*
  * Kazakh Chars Reshaper v1.0
- *create and debugging by mauleta
+ * Create and debugging by mauleta
  * E-mail: mauleta@qq.com 
  * https://github.com/mauleta/KazakhCharsReshaper/
+ * Example:http://www.basbet.com/pskz
  * Tested in IE6+, Chrome, Firefox.
- * Copyright 2015 kazakhsoft.com
+ * Copyright 2016 kazakhsoft.com
  */
 (function ($) {
  var arb_kz_json = {
