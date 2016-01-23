@@ -5,6 +5,6 @@ Kazakh Arabic Chars Reshaper JQuery Plugin
             $.reshaperWebKzChars();
     })
 ###Reshaper Kazakh Chars
-        $.reshaperKzChars("سالەم");
+        var str = $.reshaperKzChars("سالەم");
 ###Reshaper Kazakh Chars
-        $.disReshaperKzChars("ﺳﺎﻟﻪﻡ");
+        var str = $.disReshaperKzChars("ﺳﺎﻟﻪﻡ");
