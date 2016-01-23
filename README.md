@@ -8,7 +8,9 @@ Kazakh Arabic Chars Reshaper JQuery Plugin
     $(function () {
             $.reshaperWebKzChars();
     })
-###Reshaper Kazakh Chars
-        var str = $.reshaperKzChars("سالەم");
-###Reshaper Kazakh Chars
-        var str = $.disReshaperKzChars("ﺳﺎﻟﻪﻡ");
+    
+    //Reshaper Kazakh Chars
+    var str1 = $.reshaperKzChars("سالەم");
+    //Dis Reshaper Kazakh Chars
+    var str2 = $.disReshaperKzChars(str1);
+        
