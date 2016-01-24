@@ -118,6 +118,9 @@
     function disReshaperKzChars(string) {
         var result = "";
         for (var i = 0; i < string.length; i++) {
+            if (string.charAt(i) == "\u2E2E") { result += "\u061F"; continue; }
+            if (string.charAt(i) == "\u2E32") { result += "\u060C"; continue; }
+            if (string.charAt(i) == "\u2E35") { result += "\u061B"; continue; }
             if (string.charAt(i) == "\uFEFB" || string.charAt(i) == "\uFEFC")
             {
                 result += "\u0644" + "\u0627";
@@ -145,10 +148,10 @@
          prevEnd = true, // prev is end (default is end)
          result = "";
         for (; index <= length; index++) {
-            prev = (prev == "\u061F") ? "\u2E2E" : prev;
-            prev = (prev == "\u060C") ? "\u2E32" : prev;
-            prev = (prev == "\u061B") ? "\u2E35" : prev;
             var current = index != length ? string.charAt(index) : undefined; // current char
+            if (prev == "\u061F") { result += "\u2E2E"; prev = current; prevEnd = true; continue; }
+            if (prev == "\u060C") { result += "\u2E32"; prev = current; prevEnd = true; continue; }
+            if (prev == "\u061B") { result += "\u2E35"; prev = current; prevEnd = true; continue; }
             var jointCharIndex = getJointCharIndex(prevEnd, prev, current)
             if (jointCharIndex != -1) {
                 result += jointCharArray[jointCharIndex];
