@@ -121,6 +121,7 @@
             if (string.charAt(i) == "\u2E2E") { result += "\u061F"; continue; }
             if (string.charAt(i) == "\u2E32") { result += "\u060C"; continue; }
             if (string.charAt(i) == "\u2E35") { result += "\u061B"; continue; }
+            if (string.charAt(i) == "\u002D") { result += "\u0640"; continue; }
             if (string.charAt(i) == "\uFEFB" || string.charAt(i) == "\uFEFC")
             {
                 result += "\u0644" + "\u0627";
@@ -152,6 +153,7 @@
             if (prev == "\u061F") { result += "\u2E2E"; prev = current; prevEnd = true; continue; }
             if (prev == "\u060C") { result += "\u2E32"; prev = current; prevEnd = true; continue; }
             if (prev == "\u061B") { result += "\u2E35"; prev = current; prevEnd = true; continue; }
+            if (prev == "\u0640") { result += "\u002D"; prev = current; prevEnd = true; continue; }
             var jointCharIndex = getJointCharIndex(prevEnd, prev, current)
             if (jointCharIndex != -1) {
                 result += jointCharArray[jointCharIndex];
