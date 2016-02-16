@@ -155,6 +155,7 @@
             if (prev == "\u060C") { result += "\u2E32"; prev = current; prevEnd = true; continue; }
             if (prev == "\u061B") { result += "\u2E35"; prev = current; prevEnd = true; continue; }
             if (prev == "\u0640") { result += "\u002D"; prev = current; prevEnd = true; continue; }
+            if (prev == "\u066A") { result += "\u0025"; prev = current; prevEnd = true; continue;}
             if (prev == "\u06BE") { result += "\uFBAC"; prev = current; prevEnd = false; continue; }
             var jointCharIndex = getJointCharIndex(prevEnd, prev, current)
             if (jointCharIndex != -1) {
