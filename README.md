@@ -1,6 +1,6 @@
 # KazakhCharsReshaper
 Kazakh Arabic Chars Reshaper JQuery Plugin
-
+```html
     <script src="js/jquery.min.js"></script>
     <script src="js/KazakhCharsReshaper.js"></script>
 ```javascript    
