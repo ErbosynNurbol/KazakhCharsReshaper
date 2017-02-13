@@ -3,7 +3,7 @@ Kazakh Arabic Chars Reshaper JQuery Plugin
 
     <script src="js/jquery.min.js"></script>
     <script src="js/KazakhCharsReshaper.js"></script>
-```    
+```javascript    
     $(function () {
             //Reshaper Web Kazakh Chars
             $.reshaperWebKzChars();
